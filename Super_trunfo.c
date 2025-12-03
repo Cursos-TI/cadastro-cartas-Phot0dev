@@ -78,31 +78,43 @@ int main(){
     printf("Qual a quantidade de pontos turisticos? ");
     scanf("%d", &turi2);
 
+    //Calculos das variaveis de densidade demográfica da carta n1 e n2.
+
+    float dp1 = (float)(pop1 / area1); //Calculo da Densidade Populacional desta carta.
+    float pibc1 = (float)(pib1 / pop1); //Calculo do Pib percapita da carta n1.
+
+    float dp2 = (float)(pop2 / area2); //Calculo da Densidade Populacional desta carta.
+    float pibc2 = (float)(pib2 / pop2); //Calculo do Pib percapita da carta n2.
+
     //Texto informativo do armazenamento dos dados da carta n°1 e n°2.
 
     printf("Suas duas cartas foram criadas, segue abaixo as informações.\n\n");
 
     //Dados impressos da carta n°1.
 
-    printf("Carta Número 01: \n\n");
+    printf("Carta Número 01: \n");
     printf("Estado: %s \n", estado1);
     printf("Código: %s%s \n", estado1, codigo1);
     printf("Nome da Cidade: %s \n", cidade1);
     printf("População: %d \n", pop1);
     printf("Aréa: %.2f km²\n", area1);
-    printf("PIB: %.2f \n", pib1);
-    printf("Número de Pontos Turísticos: %d \n\n", turi1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Número de Pontos Turísticos: %d \n", turi1);
+    printf("Densidade Populional: %.2f hab/km² \n", dp1);
+    printf("Pib Percapita: %.2f reais \n\n", pibc1);
     
     //Dados impressos da carta n°2.
 
-    printf("Carta Número 02: \n\n");
+    printf("Carta Número 02: \n");
     printf("Estado: %s \n", estado2);
     printf("Código: %s%s \n", estado2, codigo2);
     printf("Nome da Cidade: %s \n", cidade2);
     printf("População: %d \n", pop2);
     printf("Aréa: %.2f km²\n", area2);
-    printf("PIB: %2.f \n", pib2);
+    printf("PIB: %2.f bilhões de reais \n", pib2);
     printf("Número de Pontos Turísticos: %d \n", turi2);
+    printf("Densidade Populional: %.2f hab/km² \n", dp2);
+    printf("Pib Percapita: %.2f \n", pibc2);
 
     //Fim do programa.
 
